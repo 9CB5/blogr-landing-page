@@ -306,7 +306,7 @@ footer p {
 
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
 
     .burger {
         display: block;
