@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>[Blogr]</title>
+
+</head>
+<body>
+  <nav>
+    
+    <div class="logo">
+      <img src="images/logo.svg">
+    </div>
+    <ul class="nav-links">
+
+      <div class="dropdown">
+        <li><a href="#" onclick="toggleDropdown('product-dropdown')" class="link">Product</a></li>
+        <div id="product-dropdown" class="dropdown-content">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <li><a href="#" onclick="toggleDropdown('company-dropdown')" class="link">Company</a></li>
+        <div id="company-dropdown" class="dropdown-content">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <li><a href="#" onclick="toggleDropdown('connect-dropdown')" class="link">Connect</a></li>
+        <div id="connect-dropdown" class="dropdown-content">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+
+      <div class="nav-accounts-burger">
+        <a href="#a-link">Login</a>
+        <button class="btn-light">Sign up</button>
+      </div>
+      
+    </ul>
+      <div class="nav-accounts">
+        <a href="#a-link">Login</a>
+        <button class="btn-light">Sign up</button>
+      </div>
+
+      <img src="./images/icon-hamburger.svg" class="burger">
+  </nav>
+
+  <section class="banner">
+    <h1>A modern publishing platform</h1>
+    <h3>Grow your audience and build your online brand</h3>
+    
+    <div class="banner-btns">
+      <button class="btn-light">Start for Free</button>
+      <button class="btn-dark">Learn More</button>
+    </div>
+  </section>
+
+  <section class="design-for-future">
+    <h1>Designed for the future</h1>
+
+    <div class="section-content-design">
+      <div class="left-section">
+        <h3> Introducing an extensible editor</h3>
+        <p> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.
+        </p>
+        <h3> Robust content management</h3>
+        <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+      <div class="right-section">
+        <img src="./images/illustration-editor-desktop.svg" class="illustration-editor-desktop">
+        <img src="./images/illustration-editor-mobile.svg" class="illustration-editor-mobile">
+      </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="infastructure">
+    <div class="infastructure-image">
+      <img src="./images/illustration-phones.svg" class="phones">
+    </div>
+    <div class="infastructure-caption">
+      <h1>State of the Art Infrastructure</h1>
+      <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+  </section>
+
+  <section class="final-section">
+    <div class="final-section-image">
+      <img src="./images/illustration-laptop-desktop.svg" class="illustration-laptop-desktop">
+      <img src="./images/illustration-laptop-mobile.svg" class="illustration-laptop-mobile">
+    </div>
+    <div class="final-section-caption">
+      <h3> Free, open, simple </h3>
+      <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h3> Powerful tooling </h3>
+      <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo">
+      <img src="./images/logo.svg">
+    </div>
+
+    <div class="product">
+      <h5>Product</h5>
+      <br>
+      <p>Overview</p>
+      <p>Pricing</p>
+      <p>Marketplace</p>
+      <p>Features</p>
+      <p>Integrations</p>
+    </div>
+
+    <div class="company">
+      <h5>Company</h5>
+      <br>
+      <p>About</p>
+      <p>Team</p>
+      <p>Blog</p>
+      <p>Careers</p>
+    </div>
+
+    <div class="connect">
+      <h5>Connect</h5>
+      <br>
+      <p>Contact</p>
+      <p>Newsletter</p>
+      <p>LinkedIn</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
