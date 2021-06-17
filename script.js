@@ -3,6 +3,22 @@ var activeDropDownClass = '';
 function toggleDropdown(dropdownID, dropdownClass) {
     document.getElementById(dropdownID).classList.toggle("show");
     activeDropDownClass = dropdownClass;
+    arrowToggle(dropdownID);
+}
+
+function arrowToggle(id) {
+  if (id == "product-dropdown") {
+    document.getElementById("product-arrow").classList.toggle("rotated");
+  }
+
+  if (id == "company-dropdown") {
+    document.getElementById("company-arrow").classList.toggle("rotated");
+  }
+
+  if (id == "connect-dropdown") {
+    document.getElementById("connect-arrow").classList.toggle("rotated");
+  }
+  
 }
 
 function navToggle() {
@@ -17,10 +33,8 @@ function navToggle() {
 
 navToggle();
   
-// Close the dropdown if the user clicks outside of it
+// When users click outside of dropdown elements
 window.onclick = function(event) {
-    console.log(activeDropDownClass);
-    console.log(event.target.className);
     if (event.target.className != activeDropDownClass) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       for (var i = 0; i < dropdowns.length; i++) {
@@ -29,5 +43,19 @@ window.onclick = function(event) {
           openDropdown.classList.remove('show');
         }
       }
+
+      // rotate arrows 
+      if (document.getElementById("product-arrow").classList.contains("rotated")) {
+        document.getElementById("product-arrow").classList.toggle("rotated");
+      }
+
+      if (document.getElementById("company-arrow").classList.contains("rotated")) {
+        document.getElementById("company-arrow").classList.toggle("rotated");
+      }
+
+      if (document.getElementById("connect-arrow").classList.contains("rotated")) {
+        document.getElementById("connect-arrow").classList.toggle("rotated");
+      }
+      
     }
   }
